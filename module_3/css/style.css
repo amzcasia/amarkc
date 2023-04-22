@@ -1,0 +1,186 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+
+}
+
+.container{
+	position: relative;
+	overflow: hidden;
+
+}
+
+#logo_img{
+	float: left;
+	height:100px;
+	width: 100px;
+	background: url('https://en.wikipedia.org/static/images/icons/wikipedia.png') no-repeat;
+	margin: 10px;
+	
+}
+
+.navbar-brand{
+	float: left;
+	margin-top: 15px;
+}
+
+.navbar-brand h1 {
+	font-family: "Times New Roman";
+}
+
+.navbar-brand span{
+	font-family: "Times New Roman";
+}
+
+
+
+
+.nav_collapse {
+	float: right;
+}
+
+div.nav{
+	float: right;
+	margin: 35px 10px;
+}
+span.nav_item {
+	float: left;
+}
+
+.nav-link:hover{
+	text-decoration: underline;
+	text-decoration-color: #0d6efd;
+}
+
+#nav_btn{
+	border: 1px solid black;
+	width: 40px;
+	height: 30px;
+	float: right;
+	border-radius: 6px;
+	margin: 45px 10px;
+}
+
+.button_line{
+	border: 1px solid black;
+	margin: 5px auto;
+	width: 66%;
+	/*vertical-align: center;*/
+}
+
+#navbar_collapse{
+}
+
+#navbar_collapse > .nav-link{ 
+	color: #0d6efd;
+	text-align: center;
+	padding: 3px;
+}
+
+div#navbar_collapse{
+	padding: 10px;
+}
+
+div.welcome-text{
+	background-color: #f8f9fa;
+	border: 1px solid #a6a6a6;
+	padding-top: 15px;
+}
+
+div.container-article{
+	/**background-color: #f8f9fa;
+	border: 1px solid #a6a6a6;**/
+	padding-top: 15px;
+	margin-top: 0px;
+}
+
+.welcome-text h3{
+	text-align: center;
+	font-weight: normal;
+}
+
+.welcome-text p{
+	text-align: center;
+}
+
+.article h4{
+	font-size: 1.2em;
+}
+.article p {
+	text-indent: 80px;
+	text-align: justify;
+}
+
+div.article {
+	padding: 15px;
+	padding-top: 0px;
+}
+
+div.img-holder{
+	width: 100%;
+	overflow: hidden;
+}
+
+div.article-holder-holder {
+	padding: 0px;
+}
+
+.container-article1 > h4 {
+	margin-top: 15px;
+	background-color: #cef2e0;
+	border: 1px solid #a3bfb1;
+	padding: 3px;
+}
+
+.container-article1 {
+	background-color: #f5fffa;;
+	border: 1px solid #cef2e0;
+	margin-right: 7.5px;
+}
+
+.container-article2 > h4 {
+	margin-top: 15px;
+	background-color: #cedff2;
+	border: 1px solid #a3b0bf;
+	padding: 3px;
+}
+
+.container-article2 {
+	margin-left: 7.5px;
+	background-color: #f5faff;;
+	border: 1px solid #cedff2;
+}
+.container-article3 > h4 {
+	margin-top: 15px;
+	background-color: #ddcef2;
+	border: 1px solid #afa3bf;
+	padding: 3px;
+}
+
+div.container-article3 {
+	margin-top: 10px;
+	background-color: #faf5ff;
+	border: 1px solid #ddcef2;
+}
+
+@media (min-width: 576px) {
+
+
+} //* end of XS *//
+@media (min-width: 768px) {
+  
+}//* end of S *//
+@media (min-width: 992px) {
+  
+}//* end of M *//
+@media (min-width: 1200px) {
+	.navbar-brand{
+
+	}
+  
+}//* end of L *//
+@media (min-width: 1400px) {
+
+}//* end of XL *//
