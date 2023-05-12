@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jejoju Cafe</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="bg-1">
+    
+    <header class="grid grid-cols-2 gap-4 px-[10%] bg-3 h-[70px] relative">      <!--top-0 sticky z-[50] -->
+      <div class="container_logo flex items-center">
+        <a href="#series" class="flex items-center">
+          <img src="..\images\logo.jpg" class="h-[50px] rounded-full" alt="Jejoju logo">
+          <h1 class="ml-4 text-3xl font-bold">JeJoJu</h1>
+        </a>
+      </div>
+      <nav class="">        
+        <ul class="grid grid-cols-3 gap-2 content-center h-full">
+          <li class="col-span-1 grid content-center h-[40px] rounded-full bg-[#FFF9ED]">
+            <a href="#" class="">
+            <div class="flex justify-center">
+              <img src="..\images\home_icon.png" class="h-[25px]"> 
+              <div class="pl-1">Home</div>
+            </div>
+            </a>
+          </li>
+          <li class="col-span-1 grid content-center h-[40px] rounded-full hover:bg-white">
+            <a href="#" class="">
+            <div class="flex justify-center">
+              <img src="..\images\menu_icon.png" class="h-[25px]"> 
+              <div class="pl-1">Menu</div>
+            </div>
+            </a>
+          </li>
+          <li class="col-span-1 grid content-center h-[40px] rounded-full hover:bg-white">
+            <a href="../../../fcc/test.html" class="">
+            <div class="flex justify-center">
+              <img src="..\images\booth_icon.png" class="h-[25px]"> 
+              <div class="pl-1">Booth</div>
+            </div>
+            </a>
+          </li>     
+        </ul>
+      </nav>      
+    </header>
+    
+    <div class="main_content relative">
+      <section class="overflow-hidden grid grid-cols-1 items-center h-[calc(100vh-115px)] relative snap-end">
+        <div class="top-0 left-0 w-full h-[calc(screen-100px)] overflow-hidden bg-1 relative">
+          <video autoplay muted loop class="mx-auto opacity-50 w-full aspect-video bg-1 top-0 left-0">
+            <source src="../images/promotional_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="absolute top-[290px] left-0 h-sc reen w-full grid content-center">
+          <h1 class="manrope text-6xl font-bold text-[#A96215] mx-auto -translate-y-16">
+            Cravings Sa-tea-sfied
+          </h1>
+          <span class="manrope mx-auto mt-5 text-[30px] font-semibold -translate-y-16">
+            Here's to adding that sweet treat feeling to your day.
+          </span>
+          <div class="mx-auto bg-black mt-2 w-[300px] rounded-full flex justify-center -translate-y-16">
+            <a href="#"><span class="manrope text-[32px] text-white">Order Your Drink</span></a>
+          </div>
+        </div>
+        <div class="absolute left-[1060px] top-[188px]">
+          <img src="..\images\check-mark.png" class="w-[52px] h-[56px]">
+        </div>
+      </section> <!-- End of video container -->
+
+      <section id="series" class="specials w-full snap-end relative">
+        <div class="bg-3 w-[70%] py-2 pl-[10%] flex items-center rounded-r-2xl my-5">
+          <span class="font-bold text-3xl">
+            Enjoy Different Varieties.
+          </span>
+        </div>
+
+        
+
+        <div class="w-full px-[10%] grid grid-cols-2">
+          
+          <div class=" w-full col-span-1 mt-5 mb-10">
+            <a href="#" class="grid justify-items-center relative hover:drop-shadow-xl rounded-[20px]">
+            <img src="..\images\series_1.png" class="rounded-[20px] border-[5px] border-[#a96215]">
+            <div class="absolute bottom-0 max-w-[495px] py-2 w-full bg-5 flex justify-center rounded-b-[20px]">
+              <p class="text-2xl text-white font-bold block">J's Specials</p>
+            </div>
+            </a>
+          </div>
+
+          <div class=" w-full col-span-1 mt-5 mb-10">
+            <a href="#" class="grid justify-items-center relative hover:drop-shadow-xl rounded-[20px]">
+            <img src="..\images\series_2.png" class="rounded-[20px] border-[5px] border-[#a96215]">
+            <div class="absolute bottom-0 max-w-[495px] py-2 w-full bg-5 flex justify-center rounded-b-[20px]">
+              <p class="text-2xl text-white font-bold block">Original Series</p>
+            </div>
+            </a>
+          </div>
+
+          <div class=" w-full col-span-1 mt-5">
+            <a href="#" class="grid justify-items-center relative hover:drop-shadow-xl rounded-[20px]">
+            <img src="..\images\series_3.png" class="rounded-[20px] border-[5px] border-[#a96215]">
+            <div class="absolute bottom-0 max-w-[495px] py-2 w-full bg-5 flex justify-center rounded-b-[20px]">
+              <p class="text-2xl text-white font-bold block">Coffee Collection</p>
+            </div>
+            </a>
+          </div>
+
+          <div class=" w-full col-span-1 mt-5">
+            <a href="#" class="grid justify-items-center relative hover:drop-shadow-xl rounded-[20px]">
+            <img src="..\images\series_4.png" class="rounded-[20px] border-[5px] border-[#a96215]">
+            <div class="absolute bottom-0 max-w-[495px] py-2 w-full bg-5 flex justify-center rounded-b-[20px]">
+              <p class="text-2xl text-white font-bold block">Fruitea Series</p>
+            </div>
+            </a>
+          </div>
+          
+          <a href="#" class="col-span-2 mt-10 w-[35%] rounded-full  mx-auto">
+          <div class= "w-full bg-3 h-16 flex justify-center items-center rounded-full">
+            <p class="text-2xl font-bold">Give me more</p>
+          </div>
+           </a>
+
+        </div>
+      </section> <!-- End of Specials Section -->
+      <section id="promo" class="promo w-full h-[730px] snap-end relative grid my-5">
+        
+        <div id="promo_background" class="h-full w-full absolute flex overflow-hidden">
+          <!--<img src="..\images\promo_6.jpg" class=" w-full aspect-square blur-lg opacity-50 bg_image absolute top-0 left-0">-->
+          <img src="..\images\promo_6.jpg" class=" w-full aspect-square blur-lg opacity-50 bg_image absolute top-0 left-0" data-index="bg0" data-status="bg_inactive">
+          <img src="..\images\promo_2.jpg" class=" w-full aspect-square blur-lg opacity-50 bg_image absolute top-0 left-0" data-index="bg1" data-status="bg_inactive">
+          <img src="..\images\promo_5.jpg" class=" w-full aspect-square blur-lg opacity-50 bg_image absolute top-0 left-0" data-index="bg2" data-status="bg_inactive">
+          <img src="..\images\promo_1.png" class=" w-full aspect-square blur-lg opacity-50 bg_image absolute top-0 left-0" data-index="bg3" data-status="bg_active">
+        </div>
+        <!--
+        <div class="bg-3 w-[70%] pl-[10%] flex items-center rounded-r-2xl my-5">
+          <span class="font-bold text-3xl">
+            Sweet Deals. Sweet Prices.
+          </span>
+        </div>
+        -->
+        <div class="bg-3 w-[70%] py-2 pl-[10%]  h-[52px]  flex items-center rounded-r-2xl my-5 z-50">
+          <span class="font-bold text-3xl ">
+            Sweet Deals. Sweet Prices.
+          </span>
+        </div>
+
+        
+        <div class="w-full h-full">        
+
+          <div class="carousel_container flex items-center justify-between relative w-[600px] mx-auto">
+            <div class="left_button" onclick="swipeRight()"></div>
+            <ul class="w-[550px] h-[550px] relative overflow-hidden rounded-3xl">
+              <li data-index="0" data-status="inactive" class="image_gallery absolute translate-x-[100%]">
+                <img class="h-[550px] aspect-square" src="..\images\promo_6.jpg"  >
+              </li>
+              <li data-index="1" data-status="inactive" class="image_gallery absolute translate-x-[100%]" >
+                <img class="h-[550px] aspect-square"  src="..\images\promo_2.jpg" >
+              </li>
+              <li data-index="2" data-status="inactive" class="image_gallery absolute translate-x-[100%]">
+                <img class="h-[550px] aspect-square" src="..\images\promo_5.jpg">
+              </li>
+              <li data-index="3" data-status="active" class="image_gallery absolute translate-x-[100%]">
+                <img class="h-[550px] aspect-square" src="..\images\promo_1.png">
+              </li>
+            </ul>
+            <div class="right_button" onclick="swipeLeft()"></div>
+            <div class="absolute bottom-[-35px] left-[calc(50%-50px)]">
+              <button class="rounded-full h-5 w-5 text-center bg-2 image_button" data-index="b0" data-status="button_inactive" onclick="updateSlides(0)"></button>
+              <button class="rounded-full h-5 w-5 text-center bg-2 image_button" data-index="b1" data-status="button_inactive" onclick="updateSlides(1)"></button>
+              <button class="rounded-full h-5 w-5 text-center bg-2 image_button" data-index="b2" data-status="button_inactive" onclick="updateSlides(2)"></button>
+              <button class="rounded-full h-5 w-5 text-center bg-2 image_button" data-index="b3" data-status="button_active" onclick="updateSlides(3)"></button>
+            </div>
+          </div> <!-- End of carousel container-->
+        </div> <!-- End of carousel container container-->
+
+        
+
+      </section> <!-- End of Promo Section -->
+      
+      <section class="location mb-5 pb-5 grid grid-cols-2 gap-5 snap-end">
+        <div class="col-span-2 bg-3 w-[70%] py-2 pl-[10%] flex items-center rounded-r-2xl my-5">
+          <span class="font-bold text-3xl">
+            You can find us here:
+          </span>
+        </div>
+
+        <div class="pl-[20%]">
+          <img src="..\images\facade.jpg" class="w-full aspect-[803/690] rounded-[20px]">
+        </div>
+
+        <div class="w-full pr-[20%] h-full relative grid">
+          <div class=" ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.2027887061217!2d123.9392802749511!3d10.32564998979708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999fe6ece2e0b%3A0x5ceed6163283d4b9!2sJeJoJu%20Cafe!5e0!3m2!1sen!2sph!4v1683883280013!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-[20px]"></iframe>
+          </div>
+          <div class="">
+            <span class="text-lg">S.B. Cabahug St., Centro, Mandaue City (Beside San Antonio Bakeshop)</span>
+          </div>
+        </div>
+
+      </section>  <!-- End of Location Section -->
+      <section class=" grid gap-4 h-[calc(100vh-230px)] relative" id="notinc">
+        
+        <div class="h-full w-full absolute z-0 bg-1 overflow-hidden bg-1">
+          <img src="..\images\message.jpg" class="w-full aspect-[940/788] absolute top-[-200px] opacity-50  blur-md">
+        </div>
+
+
+
+        <div class=" bg-3 w-[70%] py-2 pl-[10%] flex items-center rounded-r-2xl my-5 z-50">
+          <span class="font-bold text-3xl">
+            We would love to hear from you
+          </span>
+        </div>
+
+        
+
+        <div id="form_div" class=" w-full px-[10%] z-50 ">
+          <form id ="form" class="p-4 w-[50%] mx-auto" action="https://www.freecodecamp.com/email-submit" method="post">
+            <div>
+              <label class="mt-10">Name: * </label><br>
+              <input type="text" placeholder="" name="name" id="name" required class="mt-1 w-full h-10 border border-[#BBAC83] rounded-lg"><br>            
+            </div>
+            <div class="mt-4">
+              <label class="">Email: *</label><br> 
+              <input type="email" name="email" id="email" required class="mt-1 w-full h-10 border border-[#BBAC83] rounded-lg" ><br>
+            </div>
+            <div class="mt-4">
+              <label class="">Message: *</label><br>
+              <!--<input type="text" name="message" id="message" required class="mt-1 w-full h-[200px] border border-[#BBAC83] rounded-lg"><br> -->
+              <textarea name="message" cols="30" rows="10" class="w-full h-[100px] border border-[#BBAC83] rounded-lg resize-none"> </textarea>
+              
+            </div>
+            <div class="mt-4 rounded-full w-32 h-12 flex justify-center bg-5 hover:bg-[#BBAC83] mx-auto">
+              <input class="text-center text-white font-bold text-lg" type="submit" id="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </section> <!-- End of Message Section -->
+
+      <footer class="grid grid-cols-2 gap-4 w-full px-[10%] bg-3 snap-end">
+        <div class="p-2">
+          <p>Monday - Thursday<br>
+            12:00nn - 10:00pm<br>
+          </p>
+          <p class="mt-2">
+            Friday - Sunday<br>
+            12:00nn - 12:00am
+          </p>
+        </div>
+        <div class="w-full h-full flex items-center ">
+          <div class="grid gap-2">
+            <div class="w-full flex items-center">
+              <div><img src="..\images\fb.png" class="h-[40px] aspect-square mr-10"></div>
+              <div><img src="..\images\email.png" class="h-[40px] aspect-square mr-10"></div>
+              <div><img src="..\images\phone.png" class="h-[40px] aspect-square mr-10"></div>
+            </div>
+            <div class="col-span-3 flex">
+              <p>S.B. Cabahug St., Centro, Mandaue City (Beside San Antonio Bakeshop)</p>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div> <!-- End of Main Content --> 
+    
+	  <script src="main.js"></script>
+
+    
+  </body>
+</html>
