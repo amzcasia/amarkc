@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>FCC</title>
+    </head>
+    <body>
+        <script src="code.js">   
+        
+const failureItems = [];
+for(let i = 0; i < arr.length; i++){
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`)
+}
+
+
+export const add = (x, y) => {
+  return x + y;
+}
+
+const add = (x, y) => {
+  return x + y;
+}
+
+export { add, subtract };
+
+<script type="module" src="filename.js"></script>
+
+
+//filename.js
+
+import { add, subtract } from './math_functions.js';
+
+import * as myMathModule from "./math_functions.js";
+
+myMathModule.add(2,3);
+myMathModule.subtract(5,3);
+
+export default function subtract(x, y) {
+  return x - y;
+}
+
+
+
+//importing default function module
+// no curly brace when importing default, can use any variable
+import subtract from "./math_functions.js";
+
+subtract(7,4);
+
+
+const makeServerRequest = new Promise((resolve,reject) => {});
+
+
+///////////////////////////////////////////////////////////////////////////
+        </script>
+
+
+const failureItems = [];
+for(let i = 0; i < arr.length; i++){
+  failureItems.push(`<li class="text-warning">${arr[i]}</li>`)
+}
+    </body>
+</html>

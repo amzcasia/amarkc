@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+<body>
+  <h1 id="title">Lecture 53</h1>
+  
+  <p>
+    Say hello to 
+    <input id="name" type="text">
+    <button onclick="sayHello();">
+      Say it!
+    </button>
+  </p>
+
+  
+  <div id="content"></div>
+
+  <script>
+
+    function sayHello () {
+      var name =
+       document.getElementById("name").value;
+       var message = "<h2>Hello " + name + "!</h2>";
+
+      // document
+      //   .getElementById("content")
+      //   .textContent = message;
+
+      document
+        .getElementById("content")
+        .innerHTML = message;
+
+      if (name === "student") {
+        var title = 
+          document
+            .querySelector("#title")
+            .textContent;
+        title += " & Lovin' it!";
+        document
+            .querySelector("h1")
+            .textContent = title;
+      }
+    }
+
+
+  </script>
+</body>
+</html>
