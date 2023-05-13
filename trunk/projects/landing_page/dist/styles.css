@@ -37,29 +37,6 @@ html {
     border: 1px dashed black;
 }
 
-body {
-    /*height: 100%;
-    //overflow: hidden;*/
-}
-
-.main_content{
-    /*height: calc(100vh - 70px);*/
-    /*scroll-snap-type: y mandatory;*/
-    /*overflow-y: scroll;*/
-}
-
-
-/*
-body {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-
-    & section{
-        scroll-snap-align: end;
-        background-color: red;
-        border: 1px solid black;
-    }
-}*/
 
 #left_button{
     background-image: url("../images/left.png");
@@ -156,14 +133,7 @@ body {
   opacity: 50%;
 }
 
-
-/*
-  section#promo{
-    background-image:  url("/images/promo_5.jpg");
-    border: 1px solid black;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    filter: blur(8px);
-  -webkit-filter: blur(8px);
-  }*/
+.header {
+  /*filter: drop-shadow(0 0 10px #000000);  */
+  box-shadow: 0 20px 1px black;
+}
