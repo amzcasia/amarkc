@@ -61,22 +61,21 @@ body {
     }
 }*/
 
-.left_button{
+#left_button{
     background-image: url("../images/left.png");
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     border-radius: 100%;
     cursor: pointer;
-    
 }
 
-.right_button{
+#right_button{
     background-image: url("../images/right.png");
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
