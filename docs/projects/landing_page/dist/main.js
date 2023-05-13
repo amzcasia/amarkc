@@ -1,5 +1,3 @@
-const menuBtn = document.getElementById("menuButton");
-addEventListener(onclick,menuBtn,)
 
 const groups = document.getElementsByClassName("image_gallery");
 let activeIndex = groups.length-1;
@@ -25,7 +23,6 @@ const swipeLeft = () => {
     nextButton.dataset.status = "button_active";
     nextBg.dataset.status="bg_active";
     activeIndex = nextIndex;
-    console.log("swipeleft: " + activeIndex);
   },10);
   
   
@@ -52,7 +49,6 @@ const swipeRight = () => {
     nextButton.dataset.status = "button_active"
     nextBg.dataset.status="bg_active";
     activeIndex = nextIndex;
-    console.log("swiperight: " + activeIndex);
   },10);
   
   
@@ -67,7 +63,6 @@ function updateSlides(slide_index) {
             nextButton = document.querySelector(`[data-index="b${nextIndex}"]`),
             currentBg = document.querySelector(`[data-index="bg${activeIndex}"]`),
             nextBg = document.querySelector(`[data-index="bg${nextIndex}"]`);
-  console.log(index_diff);
   switch (index_diff){
     case -1:
       swipeRight();
@@ -92,7 +87,6 @@ function updateSlides(slide_index) {
         nextButton.dataset.status = "button_active";
         nextBg.dataset.status="bg_active";
         activeIndex = nextIndex;
-        console.log("swiperight: " + activeIndex);
       },10);
       break;
     case 2:
@@ -105,14 +99,12 @@ function updateSlides(slide_index) {
         nextButton.dataset.status = "button_active"
         nextBg.dataset.status="bg_active";
         activeIndex = nextIndex;
-        console.log("swipeleft: " + activeIndex);
       },10);
       break;
     }
 }
 
 function moveRight(){
-  console.log("Right");
 }
 
 setInterval(swipeLeft, 5000);

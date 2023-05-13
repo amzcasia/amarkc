@@ -16,10 +16,10 @@
   </head>
   <body class="relative bg-1">
     
-    <header class="grid grid-cols-2 gap-4 px-[10%] bg-3 h-[70px] w-full relative border-b-2 border-[#A37A00] drop-shadow-2xl drop- z-[100]">      <!--top-0 sticky z-[50] -->
+    <header id="htmlHeader" class="grid grid-cols-2 gap-4 px-[10%] bg-3 h-[70px] w-full border-b-2 border-[#A37A00] z-[100] sticky top-[0px]  transition duration-100 drop-shadow-2xl">      <!-- top-0 relative sticky z-[50]  translate-y-[70px] hover:translate-y-0 -->
       
       <div class="flex items-center container_logo ">
-        <a href="#series" class="flex items-center border-b-4 border-[#A37A00] h-full">
+        <a href="index.html" class="flex items-center h-full">
           <img src="..\images\logo.jpg" class="h-[50px] rounded-full" alt="Jejoju logo">
           <h1 id="brand" class="ml-4 text-3xl font-bold">JeJoJu</h1>
         </a> 
@@ -43,29 +43,35 @@
           </li>     
         </ul>
         <div class="relative flex items-center justify-end lg:hidden">
-          <button id="menu_button"class="rounded-full bg-3 h-[45px] w-[45px] hover:bg-[#E6C359] transition-colors duration-300"><img src="..\images\more.png" class="h-[25px] w-[25px] m-auto"></button>
+          <button id="menuBtn" onclick=" /*<!-- eventListenerTest -->*/ " class="rounded-full bg-3 h-[45px] w-[45px] hover:bg-[#E6C359] transition-colors duration-300">
+            <img id="menuIcon" src="..\images\more.png" class="h-[25px] w-[25px] m-auto">
+          </button>
           <!-- <div class="absolute w-[40px] h-[40px] left-0 top-0 rounded-full bg-slate-400 scale-0 hover:scale-150 transition ease-in-out"></div> -->
         </div>
       </nav>
-      <div id="small_navbar" class="hidden lg:hidden absolute right-0 w-[50%] top-[70px] z-[100] bg-3 h-screen border-l-2 border-[#A37A00]">
-        <ul class="grid gap-3 pt-5">
-          <li class="text-2xl hover:text-[#a96215] pl-7 transition">
+      <div id="smallNavbar" class="hidden lg:hidden absolute right-0  top-[70px] z-[100] w-[50%] h-screen">
+        
+        <ul id="navbarEntries" class="flex flex-col gap-4 pt-5 translate-x-full border-l-2 border-[#A37A00] w-full h-screen bg-3 transition ease-out duration-300 text-2xl">
+
+
+          <li class="hover:text-[#a96215] pl-7 transition">
             <a href="#" class="">
-              <span class="text-xl font-bold">Menu</span>
+              <span class="text-xl font-bold text-right">Menu</span>
             </a>
           </li>
-          <li class="text-2xl hover:text-[#a96215] pl-7 transition">
+          <li class="hover:text-[#a96215] pl-7 transition">
             <a href="#" class="">
               <span class="text-xl font-bold">Partner</span>
             </a>
           </li>
-          <li class="text-2xl hover:text-[#a96215] pl-7 transition">
+          <li class="hover:text-[#a96215] pl-7 transition">
             <a href="#" class="">
               <span class="text-xl font-bold">Contact Us</span>
             </a>
           </li>
         </ul>
       </div>  <!-- End of Small Navbar-->  
+      
        
     </header>
     
@@ -254,7 +260,7 @@
 
           <div class="relative grid col-span-2 w-fullh-full lg:col-span-1">
             <div class="overflow-hidden border-2 border-black rounded-[20px] h-[450px]">
-              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.2027887061217!2d123.9392802749511!3d10.32564998979708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999fe6ece2e0b%3A0x5ceed6163283d4b9!2sJeJoJu%20Cafe!5e0!3m2!1sen!2sph!4v1683883280013!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.2027887061217!2d123.9392802749511!3d10.32564998979708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999fe6ece2e0b%3A0x5ceed6163283d4b9!2sJeJoJu%20Cafe!5e0!3m2!1sen!2sph!4v1683883280013!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
             </div>
             <div class="">
               <span class="text-lg text-center">S.B. Cabahug St., Centro, Mandaue City (Beside San Antonio Bakeshop)</span>
@@ -343,9 +349,23 @@
         </div>
         
       </footer>
+
+      <div class="h-[200px] w-full bg-slate-800 text-white hidden">
+        Test Area
+        <br>
+        <button id="testBtn" class="w-20 h-10 border border-white rounded-full">
+          testBtn
+        </button>
+
+        <div id="testDiv" class="h-[100px] w-[150px] scale-x-0 hover:scale-x-100 scale-y-100 border border-white transition ease-linear bg-slate-400"></div>
+
+
+
+      </div>
     </div> <!-- End of Main Content --> 
     
 	  <script src="main.js"></script>
+    <script src="test.js"></script>
 
     
   </body>
