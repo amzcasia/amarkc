@@ -1,5 +1,10 @@
 *{
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Manrope', sans-serif;
+}
+
+#brand {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
 html {
@@ -26,13 +31,10 @@ html {
   background-color: #A96215;
 }
 
-.manrope{
-    font-family: 'Manrope', sans-serif;
-    font-style: bold;
-}
+
 
 .borders{
-    border: 1px solid black;
+    border: 1px dashed black;
 }
 
 body {
@@ -60,7 +62,7 @@ body {
 }*/
 
 .left_button{
-    background-image: url("left.png");
+    background-image: url("../images/left.png");
     height: 30px;
     width: 30px;
     background-position: center; /* Center the image */
@@ -72,7 +74,7 @@ body {
 }
 
 .right_button{
-    background-image: url("right.png");
+    background-image: url("../images/right.png");
     height: 30px;
     width: 30px;
     background-position: center; /* Center the image */
