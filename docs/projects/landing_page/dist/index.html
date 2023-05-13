@@ -16,7 +16,7 @@
   </head>
   <body class="relative bg-1">
     
-    <header class="grid grid-cols-2 gap-4 px-[10%] bg-3 h-[70px] w-full relative border-b-2 border-[#A37A00] drop-shadow-2xl z-[100]">      <!--top-0 sticky z-[50] -->
+    <header class="grid grid-cols-2 gap-4 px-[10%] bg-3 h-[70px] w-full relative border-b-2 border-[#A37A00] drop-shadow-2xl drop- z-[100]">      <!--top-0 sticky z-[50] -->
       
       <div class="flex items-center container_logo ">
         <a href="#series" class="flex items-center border-b-4 border-[#A37A00] h-full">
@@ -71,34 +71,41 @@
     
     <div class="relative text-lg main_content">
       <!--  -->
-      <section class="relative grid w-full aspect-[1280/600] overflow-hidden justify-items-center">
+      <section class="relative grid h-[calc(66vh)] overflow-hidden w-full lg:h-auto justify-items-center">
         <!-- h-[calc(screen-100px)] -->
-        <div id="video_container"class="absolute top-0 left-0 w-full aspect-[1280/600] overflow-hidden bg-1">
-          <video autoplay muted loop class="absolute left-0 w-full opacity-50 bg-1 top-[-55px]">
+        <div id="video_container" class="relative h-[calc(66vh)] w-auto lg:h-auto lg:w-full  overflow-hidden bg-white aspect-[1280/600]">
+          <video autoplay muted loop class="absolute left-0 right-0 opacity-50 bg-1 top-[-55px] h-[calc(66vh+95px)] lg:h-auto lg:w-full mx-auto blur-sm"> <!--  -->
             <source src="../images/promotional_video.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video>
         </div> <!-- End of Video Container -->
-        <div id="text_container" class="grid content-center w-full">
-          <div class="relative grid gap-3 text-lg justify-items-center">
-            <span class="text-3xl lg:text-6xl font-bold text-[#A96215] mx-auto block">
+        <!-- aspect-[1280/600] -->
+        <div id="text_container" class="absolute top-0 left-0 right-0 grid content-center w-full h-full mx-auto">
+          <div class="relative grid gap-3 text-base justify-items-center">
+            <span class="text-2xl lg:text-6xl font-bold text-[#A96215] mx-auto block">
               Cravings Sa-tea-sfied
             </span>
-            <span class="mx-auto font-semibold lg:text-3xl ">
-              Here's to adding that sweet treat feeling to your day.
+            <span class="mx-auto font-semibold text-center lg:text-3xl">
+              Here's to adding that sweet treat feeling <br class="lg:hidden"> to your day.
             </span>
             <a href="#" class="mt-3 transition bg-black rounded-full lg:mt-8 hover:bg-slate-500 ">
               <div class="flex justify-center p-2 px-6 lg:px-9 ">
                 <span class="text-white lg:text-3xl">Order Your Drink</span>  
               </div>
             </a>
-            <div class="absolute top-[-10px] lg:top-[-30px] left-[calc(50%+151px)] lg:left-[calc(50%+302px)]">
+            <div class="absolute top-[-10px] lg:top-[-30px] left-[calc(50%+120px)] lg:left-[calc(50%+302px)]">
               <img src="..\images\check-mark.png" class="w-[25px] h-[25px] lg:w-[52px] lg:h-[56px]">
             </div>
           </div>
         </div> <!-- End of Text Container -->
         
       </section> <!-- End of video container -->
+
+      <!-- 
+
+        
+
+       -->
 
       <section id="series" class="relative w-full text-lg specials snap-end">
         <div class="bg-3 w-[70%] py-2 pl-[10%] flex items-center rounded-r-2xl my-5">
@@ -148,7 +155,7 @@
           
 
           <div class="flex justify-center lg:col-span-2">
-              <a href="#" class="rounded-full borders bg-5 hover:bg-[#E7C45A] transition">
+              <a href="#" class="rounded-full bg-5 hover:bg-[#E7C45A] transition">
               <div class="p-2 px-7 ">
                 <span class="text-white lg:text-3xl">
                   Show me more
@@ -161,14 +168,14 @@
 
 
       </section> <!-- End of Specials Section -->
-      <section id="promo" class="promo w-full h-[730px] snap-end relative grid my-5">
+      <section id="promo" class="relative grid w-full mt-5 promo snap-end">
         
-        <div id="promo_background" class="absolute flex w-full h-full overflow-hidden">
+        <div id="promo_background" class="absolute flex w-full h-full overflow-hidden bg-[#D3CDC0]">
           <!--<img src="..\images\promo_6.jpg" class="absolute top-0 left-0 w-full opacity-50 aspect-square blur-lg bg_image">-->
-          <img src="..\images\promo_6.jpg" class="absolute top-0 left-0 w-full opacity-50 aspect-square blur-lg bg_image" data-index="bg0" data-status="bg_inactive">
-          <img src="..\images\promo_2.jpg" class="absolute top-0 left-0 w-full opacity-50 aspect-square blur-lg bg_image" data-index="bg1" data-status="bg_inactive">
-          <img src="..\images\promo_5.jpg" class="absolute top-0 left-0 w-full opacity-50 aspect-square blur-lg bg_image" data-index="bg2" data-status="bg_inactive">
-          <img src="..\images\promo_1.png" class="absolute top-0 left-0 w-full opacity-50 aspect-square blur-lg bg_image" data-index="bg3" data-status="bg_active">
+          <img src="..\images\promo_6.jpg" class="absolute top-0 left-0 w-auto h-full opacity-50 lg:w-full lg:h-auto aspect-square blur-lg bg_image" data-index="bg0" data-status="bg_inactive">
+          <img src="..\images\promo_2.jpg" class="absolute top-0 left-0 w-auto h-full opacity-50 lg:h-auto lg:w-full aspect-square blur-lg bg_image" data-index="bg1" data-status="bg_inactive">
+          <img src="..\images\promo_5.jpg" class="absolute top-0 left-0 w-auto h-full opacity-50 lg:h-auto lg:w-full aspect-square blur-lg bg_image" data-index="bg2" data-status="bg_inactive">
+          <img src="..\images\promo_1.png" class="absolute top-0 left-0 self-center w-auto h-full opacity-50 lg:h-auto lg:w-full aspect-square blur-lg bg_image" data-index="bg3" data-status="bg_active">
         </div>
         <!--
         <div class="bg-3 w-[70%] pl-[10%] flex items-center rounded-r-2xl my-5">
@@ -177,38 +184,54 @@
           </span>
         </div>
         -->
-        <div class="bg-3 w-[70%] py-2 pl-[10%]  h-[52px]  flex items-center rounded-r-2xl my-5 z-50">
+        <div class="bg-3 w-[70%] py-2 pl-[10%] flex items-center rounded-r-2xl my-5 z-50">
           <span class="font-bold lg:text-3xl ">
             Sweet Deals. Sweet Prices.
           </span>
         </div>
 
         
-        <div class="w-full h-full">        
+        <div class="w-full pb-12">        
 
-          <div class="carousel_container flex items-center justify-between relative w-[600px] mx-auto">
-            <div class="left_button" onclick="swipeRight()"></div>
-            <ul class="w-[550px] h-[550px] relative overflow-hidden rounded-3xl">
-              <li data-index="0" data-status="inactive" class="image_gallery absolute translate-x-[100%]">
-                <img class="h-[550px] aspect-square" src="..\images\promo_6.jpg"  >
+          <div class="relative flex items-center justify-center w-full mx-auto carousel_container">
+<!--
+             <div class="relative grid">
+              <div class="absolute top-0 left-0 w-[40px] h-[40px] rounded-full bg-2 opacity-0 hover:opacity-100 transition-opacity duration-300">
+ 
+              </div> -->
+              <div id="left_button" class="" onclick="swipeRight()">
+                <!---->
+                <!--
+                <div class="w-full h-full transition-opacity rounded-full opacity-0 hover:opacity-100 bg-2"></div> -->
+                </div>
+              
+            <!-- </div> -->
+
+            <ul class="w-[80%] lg:max-w-[550px] aspect-square relative overflow-hidden rounded-3xl mb-2">
+              <li data-index="0" data-status="inactive" class="image_gallery absolute translate-x-[100%] w-full h-full">
+                <img class="w-full lg:w-[550px] aspect-square" src="..\images\promo_6.jpg"  >
               </li>
               <li data-index="1" data-status="inactive" class="image_gallery absolute translate-x-[100%]" >
-                <img class="h-[550px] aspect-square"  src="..\images\promo_2.jpg" >
+                <img class="w-full lg:w-[550px] aspect-square"  src="..\images\promo_2.jpg" >
               </li>
               <li data-index="2" data-status="inactive" class="image_gallery absolute translate-x-[100%]">
-                <img class="h-[550px] aspect-square" src="..\images\promo_5.jpg">
+                <img class="w-full lg:w-[550px] aspect-square" src="..\images\promo_5.jpg">
               </li>
               <li data-index="3" data-status="active" class="image_gallery absolute translate-x-[100%]">
-                <img class="h-[550px] aspect-square" src="..\images\promo_1.png">
+                <img class="w-full lg:w-[550px] aspect-square" src="..\images\promo_1.png">
               </li>
             </ul>
-            <div class="right_button" onclick="swipeLeft()"></div>
+
+            <div id="right_button" onclick="swipeLeft()">
+            </div>
+
             <div class="absolute bottom-[-35px] left-[calc(50%-50px)]">
               <button class="w-5 h-5 text-center rounded-full bg-2 image_button" data-index="b0" data-status="button_inactive" onclick="updateSlides(0)"></button>
               <button class="w-5 h-5 text-center rounded-full bg-2 image_button" data-index="b1" data-status="button_inactive" onclick="updateSlides(1)"></button>
               <button class="w-5 h-5 text-center rounded-full bg-2 image_button" data-index="b2" data-status="button_inactive" onclick="updateSlides(2)"></button>
               <button class="w-5 h-5 text-center rounded-full bg-2 image_button" data-index="b3" data-status="button_active" onclick="updateSlides(3)"></button>
             </div>
+
           </div> <!-- End of carousel container-->
         </div> <!-- End of carousel container container-->
 
@@ -226,12 +249,12 @@
         
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-5 mx-[10%]">
           <div class="col-span-1 mb-5">
-            <img src="..\images\facade.jpg" class="w-full aspect-[803/690] rounded-[20px]">
+            <img src="..\images\facade.jpg" class="w-full aspect-[803/690] rounded-[20px] ">
           </div>
 
           <div class="relative grid col-span-2 w-fullh-full lg:col-span-1">
-            <div class="overflow-hidden border-2 border-black rounded-[20px]">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.2027887061217!2d123.9392802749511!3d10.32564998979708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999fe6ece2e0b%3A0x5ceed6163283d4b9!2sJeJoJu%20Cafe!5e0!3m2!1sen!2sph!4v1683883280013!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+            <div class="overflow-hidden border-2 border-black rounded-[20px] h-[450px]">
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.2027887061217!2d123.9392802749511!3d10.32564998979708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999fe6ece2e0b%3A0x5ceed6163283d4b9!2sJeJoJu%20Cafe!5e0!3m2!1sen!2sph!4v1683883280013!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe> -->
             </div>
             <div class="">
               <span class="text-lg text-center">S.B. Cabahug St., Centro, Mandaue City (Beside San Antonio Bakeshop)</span>
@@ -249,7 +272,7 @@
         </div>   
             -->
             <div class="absolute top-0 left-0 z-0 grid w-full h-full overflow-hidden place-items-center">
-              <img src="..\images\message.jpg" class="absolute lg:top-[-175px] left-0 w-full opacity-50 aspect-[940/788] scale-[175%] lg:scale-100 blur-sm">
+              <img src="..\images\message.jpg" class="absolute lg:top-[-175px] left-0 lg:w-full h-full w-auto lg:h-auto opacity-50 aspect-[940/788] scale-[175%] lg:scale-100 blur-sm">
     
             </div>
 
@@ -295,11 +318,11 @@
       </section> <!-- End of Message Section -->
 
       <footer class="text-sm lg:text-lg grid grid-cols-2 gap-4 w-full px-[10%] bg-3 snap-end py-5">
-        <div class="flex flex-col justify-between">
+        <div class="flex flex-col justify-between ">
           <p class="font-bold">
             Operating Hours
           </p>
-          <p>
+          <p class="">
             Monday - Thursday<br>
             12:00nn - 10:00pm<br>
           </p>
@@ -308,13 +331,13 @@
             12:00nn - 12:00am
           </p>
         </div>
-        <div class="flex flex-col justify-between w-full h-full">
-            <div class="flex items-center w-full">
+        <div class="flex flex-col justify-between w-full h-full lg:justify-center">
+            <div class="flex items-center w-full pb-2 ">
               <div><img src="..\images\fb.png" class="h-[40px] aspect-square mr-10"></div>
               <div><img src="..\images\email.png" class="h-[40px] aspect-square mr-10"></div>
               <div><img src="..\images\phone.png" class="h-[40px] aspect-square mr-10"></div>
             </div>
-            <div class="">
+            <div class="pt-2">
               <p>S.B. Cabahug St., Centro, Mandaue City (Beside San Antonio Bakeshop)</p>
             </div>
         </div>

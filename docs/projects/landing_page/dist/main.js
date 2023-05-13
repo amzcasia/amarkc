@@ -1,4 +1,5 @@
 const menuBtn = document.getElementById("menuButton");
+addEventListener(onclick,menuBtn,)
 
 const groups = document.getElementsByClassName("image_gallery");
 let activeIndex = groups.length-1;
