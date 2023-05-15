@@ -45,10 +45,12 @@ menuBtn.addEventListener('click', () => {
         htmlBody.classList.add('overflow-hidden');
         menuIcon.setAttribute('src','..\\images\\close.png');
 
+        //htmlHeader.classList.remove('-translate-y-[70px]')
 
         setTimeout( () => {
             navbarEntries.classList.remove('translate-x-full');
-        });
+            htmlHeader.classList.remove('-translate-y-[70px]');
+        },10);
         
         //navbarEntries.classList.add('translate-x-full');
     }
@@ -63,34 +65,30 @@ menuBtn.addEventListener('click', () => {
     }
 });
 
+
+
 let prevY = 0;
 
 window.addEventListener('scroll', () => {
-    
-    if (Math.abs(prevY - window.scrollY) > 20){
-        if (prevY > window.scrollY ){
-            //console.log("Scroll Up");
-            //htmlHeader.classList.remove('hidden');
-            htmlHeader.classList.remove('-translate-y-[70px]')
+  if (false){ return null }; 
+  if (Math.abs(prevY - window.scrollY) > 20){
+      if (prevY > window.scrollY ){
+          //console.log("Scroll Up");
+          //htmlHeader.classList.remove('hidden');
+          htmlHeader.classList.remove('-translate-y-[70px]')
 
-            
-        }
-        else{
-            //console.log("Scroll Down");
-            htmlHeader.classList.add('-translate-y-[70px]')
-            
-            
-        }
-        prevY = window.scrollY;
+          
+      }
+      else{
+          //console.log("Scroll Down");
+          htmlHeader.classList.add('-translate-y-[70px]')
+          
+          
+      }
+      prevY = window.scrollY;
 
-        console.log(prevY);
-    }
-
-    
-
-    
-
-    
+      console.log(prevY);
+  }   
 });
 
 

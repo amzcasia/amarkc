@@ -115,7 +115,7 @@ html {
 }
 
 .image_button[data-status="button_active"]{
-  background-color: #A96215;
+  background-color: #FFCF40;
   transform: scale(1.2);
 }
 
@@ -132,8 +132,4 @@ html {
 .bg_image[data-status="bg_active"]{
   opacity: 50%;
 }
-
-.header {
-  /*filter: drop-shadow(0 0 10px #000000);  */
-  box-shadow: 0 20px 1px black;
-}
+ 
