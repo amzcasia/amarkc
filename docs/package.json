@@ -2,6 +2,7 @@
   "devDependencies": {
     "tailwindcss": "^3.3.2"
   },
-  "scripts": {"dev":"tailwindcss -i ./src/input.css -o ./dist/output.css --watch"}
-
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  }
 }
