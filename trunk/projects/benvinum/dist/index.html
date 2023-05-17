@@ -13,7 +13,7 @@
 
     <title>Benvinum</title>
 </head>
-<body class="bg-[#999999]">
+<body class="bg-[#]">
     <header class="flex justify-between px-10 py-2 items-center">
         <div class="brand flex">
             <div class="logo h-[50px] w-[50px] mr-2 pt-2">
@@ -30,11 +30,11 @@
         </div>
         <nav class="">
             <ul class="flex gap-6 text-2xl content-center h-full items-center">
-                <li class="">Home</li>
-                <li>Our Wines</li>
-                <li>Contacts</li>
-                <li>On Sale</li>
-                <li>News & Events</li>
+                <li class="hover:text-primary-light transition duration-300 ease-in-out"><a href="#">Home</a></li>
+                <li class="hover:text-primary-light transition duration-300 ease-in-out"><a href="#">Our Wines</a></li>
+                <li class="hover:text-primary-light transition duration-300 ease-in-out"><a href="#">Contacts</a></li>
+                <li class="hover:text-primary-light transition duration-300 ease-in-out"><a href="#">On Sale</a></li>
+                <li class="hover:text-primary-light transition duration-300 ease-in-out"><a href="#">News & Events</a></li>
             </ul>   
         </nav>
         <div class="cart flex gap-3 h-full">
@@ -72,9 +72,9 @@
         </div>
     </div>
     <div class="main_content w-full">
-        <section class="grid justify-items-center text-white text-2xl p-4 relative h-[66vh] grid-cols-1">
-            <div class="absolute top-0 left-0 h-full w-full bg-primary-light opacity-50">
-                <img>
+        <section class="grid justify-items-center text-white text-2xl p-4 relative h-[75vh] grid-cols-1">
+            <div class="absolute h-full w-full bg-primary-dark overflow-hidden">
+                <img src="..\images\wine_1.jpg" class="absolute top-[-50%] left-0 right-0 mx-auto w-full opacity-50 blur-sm">
             </div>
             <div  class="grid justify-items-center z-50">
                 <h1 class="text-7xl text-bold">
@@ -87,7 +87,7 @@
                 <p>
                     totam quo galisum nulla. Qui quam dolore et earum 
                 </p>
-                <button class="yellow transition ease-in-out duration-300 h-[50]">
+                <button class="yellow transition ease-in-out duration-300 h-[50px]">
                     Tell Me More
                 </button>
             </div>
@@ -109,16 +109,16 @@
                 <span class="text-5xl font-bold text-primary-dark">OUR STORY</span>
                 <p>necessitatibus At velit quisquam a suscipit nemo et porro velit et vero sint quo dolores aspernatur? Et molestiae iste ut debitis quos et doloribus iusto eum officia vero ab omnis voluptatem quo mollitia </p>
                 <p>maiores quia sit   esse</p>
-                <button class="yellow transition duration-300 ease-in-out w-[300px]">Know More About Us</button>
+                <button class="yellow transition duration-300 ease-in-out w-[300px] h-[50px]">Know More About Us</button>
 
             </div>
             <div class="col-span-5 p-4">
-                <img class="h-[300px] w-[200px]">
+                <img class="h-[550px] w-auto" src="..\images\wine_2.jpg">
             </div>
         </section> <!-- End of Story-->
         <section class="grid grid-cols-12 w-full text-white text-2xl">
-            <div class="col-span-7 grid justify-items-end p-4">
-                <img class="h-[200px] w-[100px]" src="">
+            <div class="col-span-7 grid justify-items-end h-[300px] overflow-hidden relative">
+                <img class="absolute left-0 top-[-50%] h-auto w-full" src="..\images\wine_3.jpg">
 
             </div>
             <div class="col-span-5 bg-primary flex flex-col justify-between p-4">
@@ -130,28 +130,219 @@
             </div>
 
         </section> <!-- End of Tour-->
-        <section class="grid justify-items-center pt-4">
+        <section class="grid justify-items-center pt-10">
             <div class="grid justify-items-center">
-                <span class="text-5xl">OUR BEST-SELLERS</span>
+                <span class="text-5xl font-extrabold text-primary-dark">OUR BEST-SELLERS</span>
                 <span>quo dignissimos error et incidunt quasi in numquam porro sed fuga amet</span>
             </div>
             <div class="pt-4 relative">
-                <div id="shiftLeft" class="absolute w-[24px] text-center left-[-30px] top-[calc(50%-12px)] hover:bg-primary-light hover:cursor-pointer borders">&lt;</div>
-                <div id="shiftRight" class="absolute w-[24px] text-center right-[-30px] top-[calc(50%-12px)] hover:bg-primary-light hover:cursor-pointer borders">&gt;</div>
-                <div class="borders relative overflow-hidden w-[900px]">
-                    <div id="itemContainer" class="w-[900px] flex scroll-smooth transition duration-300">
-                        <div class="itemElement w-[300px] h-[100px] grow-0 shrink-0 bg-primary-light">3</div> 
-                        <div class="itemElement w-[300px] h-[100px] grow-0 shrink-0 bg-primary-light">4</div>
-                        <div class="itemElement w-[300px] h-[100px] grow-0 shrink-0 bg-primary-light">5</div>
-                        <div class="itemElement w-[300px] h-[100px] grow-0 shrink-0 bg-primary-light">1</div>
-                        <div class="itemElement w-[300px] h-[100px] grow-0 shrink-0 bg-primary-light">2</div>
-                        <div class="itemElement w-[300px] h-[100px] grow-0 shrink-0 bg-primary-light">3</div>
-                        <div class="itemElement w-[300px] h-[100px] grow-0 shrink-0 bg-primary-light">4</div>
-                        <div class="itemElement w-[300px] h-[100px] grow-0 shrink-0 bg-primary-light">5</div>
-                        <div class="itemElement w-[300px] h-[100px] grow-0 shrink-0 bg-primary-light">1</div>
-                        <div class="itemElement w-[300px] h-[100px] grow-0 shrink-0 bg-primary-light">2</div>
-                        <div class="itemElement w-[300px] h-[100px] grow-0 shrink-0 bg-primary-light">3</div>
-                    </div>
+                <div id="shiftLeft" class="absolute w-8 text-center left-[-30px] top-[calc(50%-12px)] hover:bg-primary-light hover:cursor-pointer rounded-full">
+                    <svg class='h-8 w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                        <path fillRule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clipRule="evenodd" />
+                      </svg>
+                </div>
+                <div id="shiftRight" class="absolute w-8 text-center right-[-30px] top-[calc(50%-12px)] hover:bg-primary-light hover:cursor-pointer rounded-full">
+                    <svg class='h-8 w-8 font-bold' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                        <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clipRule="evenodd" />
+                      </svg>
+                      
+                </div>
+                <div class="relative overflow-hidden w-[900px]">
+                    <div id="itemContainer" class="w-[900px] h-[550px] flex scroll-smooth transition duration-300">
+                        <div class="itemElement w-[300px] h-[550px] grow-0 shrink-0 flex flex-col justify-between py-4 px-2"> <!-- Item # 3 -->
+                            <div class="h-[70%] overflow-hidden">
+                                <img class="h-full w-auto mx-auto" src="..\images\bestseller_3.jpg">
+                            </div>
+                            <div class="grid justify-items-center h-[30%] pt-4">
+                                <p class="flex items-center text-2xl">3 Chateau Sta. Me</p>
+                                <p class="flex items-center text-xl">P 999.99</p>
+                                <div class="flex border-4 border-primary items-center">
+                                    <div class="bg-primary h-full flex items-center px-2">
+                                        <svg class=" h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-primary text-xl px-2">Add to Cart</span>
+                                </div>
+                            </div>
+                        </div> <!-- End of slider Item -->
+                        <div class="itemElement w-[300px] h-[550px] grow-0 shrink-0 flex flex-col justify-between py-4 px-2"> <!-- Item # 4 -->
+                            <div class="h-[70%] overflow-hidden">
+                                <img class="h-full w-auto mx-auto" src="..\images\bestseller_4.jpg">
+                            </div>
+                            <div class="grid justify-items-center h-[30%] pt-4">
+                                <p class="flex items-center text-2xl">4 Chateau Sta. Me</p>
+                                <p class="flex items-center text-xl">P 999.99</p>
+                                <div class="flex border-4 border-primary items-center">
+                                    <div class="bg-primary h-full flex items-center px-2">
+                                        <svg class=" h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-primary text-xl px-2">Add to Cart</span>
+                                </div>
+                            </div>
+                        </div> <!-- End of slider Item -->
+                        <div class="itemElement w-[300px] h-[550px] grow-0 shrink-0 flex flex-col justify-between py-4 px-2"> <!-- Item # 5 -->
+                            <div class="h-[70%] overflow-hidden">
+                                <img class="h-full w-auto mx-auto" src="..\images\bestseller_5.jpg">
+                            </div>
+                            <div class="grid justify-items-center h-[30%] pt-4">
+                                <p class="flex items-center text-2xl">5 Chateau Sta. Me</p>
+                                <p class="flex items-center text-xl">P 999.99</p>
+                                <div class="flex border-4 border-primary items-center">
+                                    <div class="bg-primary h-full flex items-center px-2">
+                                        <svg class=" h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-primary text-xl px-2">Add to Cart</span>
+                                </div>
+                            </div>
+                        </div> <!-- End of slider Item -->
+                        <div class="itemElement w-[300px] h-[550px] grow-0 shrink-0 flex flex-col justify-between py-4 px-2"> <!-- Item # 1 -->
+                            <div class="h-[70%] overflow-hidden">
+                                <img class="h-full w-auto mx-auto" src="..\images\bestseller_1.jpg">
+                            </div>
+                            <div class="grid justify-items-center h-[30%] pt-4">
+                                <p class="flex items-center text-2xl">1 Chateau Sta. Me</p>
+                                <p class="flex items-center text-xl">P 999.99</p>
+                                <div class="flex border-4 border-primary items-center">
+                                    <div class="bg-primary h-full flex items-center px-2">
+                                        <svg class=" h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-primary text-xl px-2">Add to Cart</span>
+                                </div>
+
+                                
+                            </div>
+                        </div> <!-- End of slider Item -->
+                        <div class="itemElement w-[300px] h-[550px] grow-0 shrink-0 flex flex-col justify-between py-4 px-2"> <!-- Item # 2 -->
+                            <div class="h-[70%] overflow-hidden">
+                                <img class="h-full w-auto mx-auto" src="..\images\bestseller_2.jpg">
+                            </div>
+                            <div class="grid justify-items-center h-[30%] pt-4">
+                                <p class="flex items-center text-2xl">2 Chateau Sta. Me</p>
+                                <p class="flex items-center text-xl">P 999.99</p>
+                                <div class="flex items-center "> <!-- Add to cart button -->
+                                    <a class="flex items-center h-full text-primary border-4 border-primary bg-primary 
+                                    hover:text-primary-light hover:bg-primary-light hover:border-primary-light
+                                    transition duratin-300 ease-in-out" href="#">
+                                        <div class=" h-full flex items-center px-2">
+                                            <svg class=" h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                                <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                            </svg>
+                                        </div>
+                                        <span class="h-full bg-white text-xl px-2 flex items-center">Add to Cart</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- End of slider Item -->
+                        <div class="itemElement w-[300px] h-[550px] grow-0 shrink-0 flex flex-col justify-between py-4 px-2"> <!-- Item # 3 -->
+                            <div class="h-[70%] overflow-hidden">
+                                <img class="h-full w-auto mx-auto" src="..\images\bestseller_3.jpg">
+                            </div>
+                            <div class="grid justify-items-center h-[30%] pt-4">
+                                <p class="flex items-center text-2xl">3 Chateau Sta. Me</p>
+                                <p class="flex items-center text-xl">P 999.99</p>
+                                <div class="flex border-4 border-primary items-center">
+                                    <div class="bg-primary h-full flex items-center px-2">
+                                        <svg class=" h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-primary text-xl px-2">Add to Cart</span>
+                                </div>
+                            </div>
+                        </div> <!-- End of slider Item -->
+                        <div class="itemElement w-[300px] h-[550px] grow-0 shrink-0 flex flex-col justify-between py-4 px-2"> <!-- Item # 4 -->
+                            <div class="h-[70%] overflow-hidden">
+                                <img class="h-full w-auto mx-auto" src="..\images\bestseller_4.jpg">
+                            </div>
+                            <div class="grid justify-items-center h-[30%] pt-4">
+                                <p class="flex items-center text-2xl">4 Chateau Sta. Me</p>
+                                <p class="flex items-center text-xl">P 999.99</p>
+                                <div class="flex border-4 border-primary items-center">
+                                    <div class="bg-primary h-full flex items-center px-2">
+                                        <svg class=" h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-primary text-xl px-2">Add to Cart</span>
+                                </div>
+                            </div>
+                        </div> <!-- End of slider Item -->
+                        <div class="itemElement w-[300px] h-[550px] grow-0 shrink-0 flex flex-col justify-between py-4 px-2"> <!-- Item # 5 -->
+                            <div class="h-[70%] overflow-hidden">
+                                <img class="h-full w-auto mx-auto" src="..\images\bestseller_5.jpg">
+                            </div>
+                            <div class="grid justify-items-center h-[30%] pt-4">
+                                <p class="flex items-center text-2xl">5 Chateau Sta. Me</p>
+                                <p class="flex items-center text-xl">P 999.99</p>
+                                <div class="flex border-4 border-primary items-center">
+                                    <div class="bg-primary h-full flex items-center px-2">
+                                        <svg class=" h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-primary text-xl px-2">Add to Cart</span>
+                                </div>
+                            </div>
+                        </div> <!-- End of slider Item -->
+                        <div class="itemElement w-[300px] h-[550px] grow-0 shrink-0 flex flex-col justify-between py-4 px-2"> <!-- Item # 1 -->
+                            <div class="h-[70%] overflow-hidden">
+                                <img class="h-full w-auto mx-auto" src="..\images\bestseller_1.jpg">
+                            </div>
+                            <div class="grid justify-items-center h-[30%] pt-4">
+                                <p class="flex items-center text-2xl">1 Chateau Sta. Me</p>
+                                <p class="flex items-center text-xl">P 999.99</p>
+                                <div class="flex border-4 border-primary items-center">
+                                    <div class="bg-primary h-full flex items-center px-2">
+                                        <svg class=" h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-primary text-xl px-2">Add to Cart</span>
+                                </div>
+                            </div>
+                        </div> <!-- End of slider Item -->
+                        <div class="itemElement w-[300px] h-[550px] grow-0 shrink-0 flex flex-col justify-between py-4 px-2"> <!-- Item # 2 -->
+                            <div class="h-[70%] overflow-hidden">
+                                <img class="h-full w-auto mx-auto" src="..\images\bestseller_2.jpg">
+                            </div>
+                            <div class="grid justify-items-center h-[30%] pt-4">
+                                <p class="flex items-center text-2xl">2 Chateau Sta. Me</p>
+                                <p class="flex items-center text-xl">P 999.99</p>
+                                <div class="flex border-4 border-primary items-center">
+                                    <div class="bg-primary h-full flex items-center px-2">
+                                        <svg class=" h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-primary text-xl px-2">Add to Cart</span>
+                                </div>
+                            </div>
+                        </div> <!-- End of slider Item -->
+                        <div class="itemElement w-[300px] h-[550px] grow-0 shrink-0 flex flex-col justify-between py-4 px-2"> <!-- Item # 3 -->
+                            <div class="h-[70%] overflow-hidden ">
+                                <img class="h-full w-auto mx-auto" src="..\images\bestseller_3.jpg">
+                            </div>
+                            <div class="grid justify-items-center h-[30%] pt-4">
+                                <p class="flex items-center text-2xl">3 Chateau Sta. Me</p>
+                                <p class="flex items-center text-xl">P 999.99</p>
+                                <div class="flex border-4 border-primary items-center">
+                                    <div class="bg-primary h-full flex items-center px-2">
+                                        <svg class=" h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-primary text-xl px-2">Add to Cart</span>
+                                </div>
+                            </div>
+                        </div> <!-- End of slider Item -->
+                    </div> <!-- End of item container -->
                     
                     
 
@@ -171,8 +362,8 @@
         </section> <!-- End of Newsletter-->
         <section class="grid grid-cols-12 w-full p-4 pl-6 text-2xl">
             <div class="grid justify-items-center col-span-5 p-4">
-                <span class="text-5xl">NEWS & EVENTS</span>
-                <img class="h-60 w-32" src="" >
+                <span class="text-5xl font-extrabold text-primary-dark">NEWS & EVENTS</span>
+                <img class="h-[550px] w-auto pt-4" src="..\images\wine_4.jpg" >
             </div>
             <div class="col-span-7 p-4 pr-6">
                 <div class="flex">
@@ -190,7 +381,7 @@
                             <button class="flex items-center text-primary-dark hover:text-primary-light transition ease-in-out duration-300">
 
                                 
-                                <svg class="h-10 w-10 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                <svg class="h-10 w-10 text-accent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                                     <path fillRule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clipRule="evenodd" />
                                   </svg>
                                   
@@ -214,7 +405,7 @@
                         </div>
                         <div class="pt-4">
                             <button class="flex items-center text-primary-dark hover:text-primary-light transition ease-in-out duration-300">
-                                <svg class="h-10 w-10 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                <svg class="h-10 w-10 text-accent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                                     <path fillRule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clipRule="evenodd" />
                                   </svg>
                                 <span>Read More ...</span>
@@ -373,6 +564,8 @@
         <h5 class="font-bold text-3xl">text-3xl HIGH QUALITY WINES</h1>
         <h6 class="font-bold text-2xl">text-2xl HIGH QUALITY WINES</h1>
         </div>
+
+        <button id="testBtn" class="h-[80px] w-[150px] border-2 border-black text-2xl p-2 transition-colors duration-300 bg-[#ff0000] hover:bg-white"> Click Me!</button>
     </div>
     <script src="main.js"></script>
 </body>

@@ -3,6 +3,7 @@ let itemElements = document.querySelectorAll('.itemElement');
 let shiftLeft = document.getElementById('shiftLeft');
 let shiftRight = document.getElementById('shiftRight');
 let beginBtn = document.getElementById('beginBtn');
+let testBtn = document.getElementById('testBtn');
 
 let shiftIndex = 3;
 let maxIndex = itemElements.length;
@@ -103,5 +104,53 @@ itemContainer.addEventListener('transitionend',() =>{
     //console.log('test');
     //nextItem();
 });
+
+
+let today = new Date();
+let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+
+testBtn.addEventListener('click',()=>{
+    let runningCode = true;
+    //console.log('start timer');
+   // today = new Date();
+    //time = today.getMilliseconds();
+    //console.log(time);
+    //setTimeout(()=>{
+    //    runningCode = false;
+    //},1000);
+    //while(false){
+    today = new Date();
+    time = today.getMilliseconds();
+    let startTime = today.getMilliseconds();
+    let curTime = today.getMilliseconds();
+    
+
+    let delay = 800;
+    //let offset = 
+    //startTime = (startTime >= (1000-delay)) ? startTime - delay : startTime;
+
+    if (startTime >= 1000 - delay){
+        startTime -= delay;
+    }
+
+    console.log('start timer: ' + startTime);
+
+    start = 0;
+    
+
+    while (curTime-startTime < delay){
+        today = new Date();
+        curTime = today.getMilliseconds();
+        //console.log(curTime);
+    }
+    console.log(delay + 'ms passed. It is now: '+ curTime);
+    
+    
+    //console.log('after 1 second')
+
+
+});
+
 
 
