@@ -51,3 +51,41 @@ button.yellow:hover{
     background-color: #FFEEB3;
 }
 
+/*
+.topRated{
+    background-image: url("wine_7.jpg");
+}
+*/
+
+.bg-hero {
+    background-image: url('../images/wine_1.jpg');
+    background-size: cover ;
+    background-position: center center;
+}
+
+
+.slide-down{   
+    animation-name: slide-down;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    
+
+}
+
+@keyframes slide-down{
+    from{
+        transform: translateY(-100%);
+        transform: scaleY(0);
+    }
+
+    to{
+        transform: translateY(0);
+        transform: scaleY(100%);
+    }
+
+}
+
+#navMenu {
+
+    transition: height 0.2s ease-in-out;
+}
