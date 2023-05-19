@@ -4,6 +4,11 @@ let shiftLeft = document.getElementById('shiftLeft');
 let shiftRight = document.getElementById('shiftRight');
 let beginBtn = document.getElementById('beginBtn');
 let testBtn = document.getElementById('testBtn');
+let menuBtn = document.getElementById('menuBtn');
+let navMenu = document.getElementById('navMenu');
+let menuHamburger = document.getElementById('menuHamburger');
+let menuClose = document.getElementById('menuClose');
+let navItems = document.getElementById('navItems');
 
 let shiftIndex = 3;
 let maxIndex = itemElements.length;
@@ -149,6 +154,41 @@ testBtn.addEventListener('click',()=>{
     
     //console.log('after 1 second')
 
+
+});
+
+let menuState = false;
+
+menuBtn.addEventListener('click', () => {
+    if(!menuState){
+        menuHamburger.classList.add('hidden');
+        menuClose.classList.remove('hidden');
+
+        navMenu.classList.remove('hidden');
+        setTimeout(() => {
+           //navMenu.classList.remove('translate-y-[-100%]');
+           navMenu.classList.remove('h-0');
+           navMenu.classList.add('h-full');
+           
+           
+            
+        },1);
+        menuState =  true;
+        
+    }else{
+        menuHamburger.classList.remove('hidden');
+        menuClose.classList.add('hidden');
+        //navMenu.classList.add('hidden');
+        //navMenu.classList.add('translate-y-[-100%]');
+        
+        navMenu.classList.remove('h-full');
+        navMenu.classList.add('h-0');
+        menuState =  false;
+        setTimeout(() => {
+            navMenu.classList.add('hidden');
+        },200);
+    }
+    console.log(menuState);
 
 });
 
