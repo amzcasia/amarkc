@@ -299,7 +299,10 @@
         
 
         <div id="form_div" class=" w-full px-[10%] z-50 ">
-          <form id ="form" class="text-base lg:text-lg p-4 w lg:w-[50%] mx-auto" action="https://www.freecodecamp.com/email-submit" method="post">
+          <!-- <form id ="form" class="text-base lg:text-lg p-4 w lg:w-[50%] mx-auto" action="https://www.freecodecamp.com/email-submit" method="post"> -->
+
+          <form id="form" class="text-base lg:text-lg p-4 w lg:w-[50%] mx-auto" action="https://formsubmit.co/strikefrdm23@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Message from Jejoju">
             <div>
               <label class="mt-10">Name: * </label><br>
               <input type="text" placeholder="" name="name" id="name" required class="w-full h-10 mt-1 border-2 border-black rounded-lg"><br>            
@@ -317,6 +320,7 @@
             <div class="flex justify-center w-32 h-12 mx-auto mt-4 transition rounded-full bg-primary hover:bg-primary-light">
               <input class="w-full text-xl font-bold text-center rounded-full hover:cursor-pointer" type="submit" id="submit" value="Submit">                
             </div>
+            <input type="hidden" name="_next" value="https://amzcasia.github.io/amarkc/">
           </form>
         </div>
 
