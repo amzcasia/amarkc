@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    header {
+        @apply text-2xl text-white;
+    }
+}
+
+@layer utilities {
+    .nav-link {
+        @apply hover:text-white transition duration-200;
+    }
+
+    .main-section {
+        @apply pt-5;
+    }
+
+    .sub-menu {
+        @apply pl-5;
+    }
+}
